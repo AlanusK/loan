@@ -1,5 +1,6 @@
 @import '~antd/dist/antd.css';
 
+/* For Welcome page */
 .logo {
   width: 120px;
   height: 31px;
@@ -22,4 +23,20 @@
   font-size: xx-large;
   font-weight: 500;
   color: darkslategray;
+}
+
+/* For log In page */
+.login-form {
+  max-width: 300px;
+  position: absolute;
+  top: 15%;
+  right: 20%;
+}
+
+.login-form-forgot {
+  float: right;
+}
+
+.login-form-button {
+  width: 100%;
 }
