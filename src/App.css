@@ -40,3 +40,12 @@
 .login-form-button {
   width: 100%;
 }
+
+/* For registration page */
+.registration-form {
+  position: absolute;
+  top: 30px;
+  width: 1000px;
+  font-weight: bold;
+}
+
