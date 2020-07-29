@@ -49,3 +49,14 @@
   font-weight: bold;
 }
 
+/* For login (loan officer) page */
+.taskButton {
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  width: 40%;
+  
+}
+
+
+
