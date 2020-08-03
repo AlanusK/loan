@@ -1,15 +1,6 @@
 import React from 'react';
-import { Layout, Menu, Breadcrumb } from 'antd';
-import './App.css';
-import logo from './logo.svg';
-
-// For loan view page
 import { Table, Button, Space } from 'antd';
 
-// For Welcome page
-const { Header, Content, Footer } = Layout;
-
-// For loan view page
 const data = [
   {
     key: '1',
@@ -38,7 +29,7 @@ const data = [
 ];
 
 
-class App extends React.Component {
+export default class Loan extends React.Component {
   state = {
     filteredInfo: null,
     sortedInfo: null,
@@ -115,25 +106,8 @@ class App extends React.Component {
       },
     ];
     return (
-      // {WELCOME PAGE}
-      <Layout className="layout">
-        <Header>
-          <img src={logo} alt="logo" className="logo" />
-          <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['3']}>
-            <Menu.Item key="1">LOAN REPAYMENT MANAGEMENT SYSTEM</Menu.Item>
-            <Menu.Item key="2" style={{ float: 'right' }}>| Create Account</Menu.Item>
-            <Menu.Item key="3" style={{ float: 'right' }}>Log Out</Menu.Item>
-          </Menu>
-        </Header>
-        <Content style={{ padding: '0 50px' }}>
-          <Breadcrumb style={{ margin: '16px 0' }}>
-            <Breadcrumb.Item>Home</Breadcrumb.Item>
-            <Breadcrumb.Item>About</Breadcrumb.Item>
-            <Breadcrumb.Item>Contact</Breadcrumb.Item>
-          </Breadcrumb>
           <div className="content">
-            {/* Loan view page codes */}
-            <div className="loanTableView">
+              <div className="loanTableView">
               <Space style={{ marginBottom: 16 }}>
                 <Button onClick={this.setAgeSort}>Sort age</Button>
                 <Button onClick={this.clearFilters}>Clear filters</Button>
@@ -146,13 +120,7 @@ class App extends React.Component {
                 New Loan
               </Button>
             </div>
-
           </div>
-        </Content>
-        <Footer style={{ textAlign: 'center' }}>Loan repayment management system ©2020 Created by Abk</Footer>
-      </Layout>
     );
   }
 }
-
-export default App;
