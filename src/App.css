@@ -16,12 +16,15 @@ body {
   height: 10vh;
 }
 
-.breadcrumb, .logo {
+.breadcrumb {
   position: absolute;
   bottom: 5px;
+  left: 10px;
 }
 
 .logo {
+  position: absolute;
+  bottom: 5px;
   right: 40px;
   border-style: solid;
   border-radius: 50%;
@@ -32,13 +35,13 @@ body {
 .content {
   height: 80vh;
   display: flex;
+  flex-flow: row wrap;
   align-items: center;
-  justify-content: center;
- 
+  justify-content: space-evenly;
 }
 
 .content Button {
-  height: 115px;
+  height: 115px;  
   margin: 50px;
 }
 

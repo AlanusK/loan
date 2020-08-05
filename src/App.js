@@ -8,7 +8,6 @@ import {
   CreditCardOutlined
 } from '@ant-design/icons';
 
-// const { /*Header,*/ Footer, Content } = Layout;
 
 function App() {
   return (
