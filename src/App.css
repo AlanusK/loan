@@ -1,13 +1,19 @@
 @import '~antd/dist/antd.css';
 
-.layout {
+body {
   text-align: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-flow: column;
 }
 
 .header {
   background-color: white;
   border-bottom-style: groove;
   position: relative;
+  height: 10vh;
 }
 
 .breadcrumb, .logo {
@@ -24,15 +30,26 @@
 
 
 .content {
-  background-color: white;
-  
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
 }
 
 .content Button {
-  height: 100px;
+  height: 115px;
   margin: 50px;
 }
 
 .icon {
-  font-size: 60px;
+  font-size: 100px;
+}
+
+footer {
+  height: 10vh;
+  background-color: silver;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

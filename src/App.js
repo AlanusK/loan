@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Breadcrumb, Button } from 'antd';
+import { Breadcrumb, Button } from 'antd';
 import './App.css';
 
 import {
@@ -8,12 +8,12 @@ import {
   CreditCardOutlined
 } from '@ant-design/icons';
 
-const { Header, Footer, Content } = Layout;
+// const { /*Header,*/ Footer, Content } = Layout;
 
 function App() {
   return (
-    <Layout className='layout'>
-      <Header className='header'>
+    <body>
+      <header className='header'>
         <Breadcrumb className='breadcrumb'>
           <Breadcrumb.Item>Home</Breadcrumb.Item>
           <Breadcrumb.Item>
@@ -25,27 +25,24 @@ function App() {
           <Breadcrumb.Item>Add Customer</Breadcrumb.Item>
         </Breadcrumb>
         <UserOutlined className='logo' />
-      </Header>
+      </header>
 
-      <Content className='content'>
-        <div>
-          <Button>
-            <UserOutlined className='icon'  />
-            <p>Customer</p>
-          </Button>
-          <Button>
-            <DollarCircleOutlined className='icon' />
-            <p>Loan</p>
-          </Button>
-          <Button>
-            <CreditCardOutlined className='icon'  />
-            <p>Payment</p>
-          </Button>
-        </div>
-      </Content>
-
-      <Footer>Footer</Footer>
-    </Layout>
+      <div className='content'>
+        <Button>
+          <UserOutlined className='icon' />
+          <p>Customer</p>
+        </Button>
+        <Button>
+          <DollarCircleOutlined className='icon' />
+          <p>Loan</p>
+        </Button>
+        <Button>
+          <CreditCardOutlined className='icon' />
+          <p>Payment</p>
+        </Button>
+      </div>
+      <footer>Footer</footer>
+    </body>
   );
 }
 
