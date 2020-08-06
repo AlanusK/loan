@@ -1,6 +1,5 @@
 import React from 'react';
-import { Breadcrumb, Button } from 'antd';
-import './App.css';
+import { Button } from 'antd';
 
 import {
   UserOutlined,
@@ -13,16 +12,6 @@ function App() {
   return (
     <body>
       <header className='header'>
-        <Breadcrumb className='breadcrumb'>
-          <Breadcrumb.Item>Home</Breadcrumb.Item>
-          <Breadcrumb.Item>
-            <a href="./appC.js">Customer</a>
-          </Breadcrumb.Item>
-          <Breadcrumb.Item>
-            <a href="./appL.js">Customer View</a>
-          </Breadcrumb.Item>
-          <Breadcrumb.Item>Add Customer</Breadcrumb.Item>
-        </Breadcrumb>
         <UserOutlined className='logo' />
       </header>
 
